@@ -9,7 +9,7 @@ import java.util.List;
 @Repository
 public class UserDAOImp implements UserDAO {
     @PersistenceContext
-    EntityManager entityManager;
+    private EntityManager entityManager;
 
     @Override
     public void saveUser(User user) {
